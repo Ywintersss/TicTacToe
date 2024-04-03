@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import './components/square'
+import Game from './components/game';
 
 function App() {
+  
+  const [playerTurn, setPlayerTurn] = useState("x");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <span className='title'>Tic Tac Toe</span>
+      <Game></Game>
+      <div className='bottom'>
+        <span>Player "{ playerTurn }" turn</span>
+
+      </div>
     </div>
   );
 }
