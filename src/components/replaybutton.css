@@ -1,0 +1,16 @@
+.replay-button{
+    width: 100%;
+    text-align: center;
+}
+
+.replay-button button{
+    cursor: pointer;
+    width: 20%;
+    margin: 10px;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    background: linear-gradient(to right, #2a5298, #4d6085);
+}

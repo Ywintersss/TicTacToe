@@ -4,15 +4,14 @@ import './components/square'
 import Game from './components/game';
 
 function App() {
-  
-  const [playerTurn, setPlayerTurn] = useState("x");
+  const [playerTurn, setPlayerTurn] = useState("X");
 
   return (
     <div className="App">
       <span className='title'>Tic Tac Toe</span>
-      <Game></Game>
+      <Game playerTurn={playerTurn} setPlayerTurn={setPlayerTurn}></Game>
       <div className='bottom'>
-        <span>Player "{ playerTurn }" turn</span>
+        <span>Player "{ playerTurn }"s turn</span>
 
       </div>
     </div>

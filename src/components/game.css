@@ -1,4 +1,11 @@
 .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.tic-tac-toe {
     display: grid;
     grid-template-columns: 150px 150px 150px;
     grid-template-rows: 150px 150px 150px;

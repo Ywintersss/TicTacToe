@@ -1,0 +1,27 @@
+.modal{
+    border: 2px solid;
+    position: fixed;
+    height: 40%;
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;   
+}
+
+.modal-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 40px;    
+}
+
+.modal-text > *{
+    padding: 0 14px;
+    margin: auto 0 auto 0;
+}
