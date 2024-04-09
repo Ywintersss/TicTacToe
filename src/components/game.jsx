@@ -41,7 +41,9 @@ export default function Game({playerTurn, setPlayerTurn}) {
     }
     const handleClick = (value, col, row, setSquareValue) => {
         // sets the value of the square (X or O)
-        setSquareValue(value)
+        if (setSquareValue(value)){
+            return;
+        }
 
         // increments the number of moves
         setMoves(moves + 1);

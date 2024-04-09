@@ -4,7 +4,7 @@ import './square.css';
 export default function Square({ playerTurn, handleClick, index, reset, setReset }) {
     const [value, setValue] = useState(null);
     const setSquareValue = () => {
-        if (value) return;
+        if (value) return true;
         setValue(playerTurn);
     }
     
